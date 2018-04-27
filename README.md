@@ -20,7 +20,7 @@ The coordinates are retrived from the GeoJson data, which is of the format
   }
 }
 ```
-To construct this, we use Google's Simple GeoJSON Editor which allows us to drag and drop markers for which the GeoJson is constructed.
+To construct this, we use Google's Simple GeoJSON Editor https://google-developers.appspot.com/maps/documentation/utils/geojson/ which allows us to drag and drop markers for which the GeoJson is constructed.
 
 The endpoint is then collected from the user by the use of a prompt
 ```javascript
