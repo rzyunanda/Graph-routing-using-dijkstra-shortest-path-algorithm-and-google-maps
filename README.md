@@ -102,7 +102,7 @@ The resulting map using an example input of 13 is
 ## Note
 1.In order to use the script, the user must request for an API - Key and replace it at:
 ```javascript
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=**apikey**&callback=initMap">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=apikey&callback=initMap">
 ```
 2.The script has only 43 markers. In order to add more we need to edit the variable **data** using the Google GeoJson editor and add the appropriate vertices and edges.
 
