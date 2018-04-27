@@ -97,6 +97,7 @@ var Path = new google.maps.Polyline({
                         });
 ```
 The resulting map using an example input of 13 is
+![](output.png "Given input: 13")
 
 ## Note
 1.In order to use the script, the user must request for an API - Key and replace it at:
