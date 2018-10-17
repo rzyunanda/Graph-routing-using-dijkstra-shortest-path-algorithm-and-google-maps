@@ -5,7 +5,7 @@ The script has 43 markers placed around the map and a graph is constructed using
 var graph = new DirectedGraph();
 graph.addVertex('i', {'j': weight(data.features[i].geometry["coordinates"], data.features[j].geometry["coordinates"]),..});
 ```
-where **i** specifies the vertex being added and **j** refers to the vertext to which there is an edge.
+where **i** specifies the vertex being added and **j** refers to the vertex to which there is an edge.
 
 The coordinates are retrived from the GeoJson data, which is of the format
 ```javascript
