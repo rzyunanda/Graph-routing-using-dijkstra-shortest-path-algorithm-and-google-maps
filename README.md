@@ -1,4 +1,4 @@
-# Indoor-Routing
+# Indoor-Routing (need to update this readme)
 This javascript gives routes, using a set of markers (to create a graph), placed using geojson data, for one section of Hartsfield–Jackson Atlanta International Airport
 The script has 43 markers placed around the map and a graph is constructed using these markers:
 ```javascript
