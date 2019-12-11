@@ -40,7 +40,7 @@
 
     <div id="map" style="position:fixed; left: 10%;"></div>
     <br>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=ENTER_YOUR_KEY_HERE&libraries=drawing&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNnzxae2AewMUN0Tt_fC3gN38goeLVdVE&libraries=drawing&callback=initMap">
     </script>
     <script>
         var customLabel = {
@@ -48,17 +48,17 @@
                 label: 'T'
             }
         };
-
+       
         var airport = {
-            lat: 33.64017019720775,
-            lng: -84.444197108928
+            lat: -0.923253,
+            lng: 100.448122
         };
 
         var Path; // Polyline
         var map;
         function initMap(){
             map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 18,
+                zoom: 15,
                 center: airport,
                 mapTypeId: 'terrain'
             });
@@ -67,7 +67,7 @@
             
             // This section downloads the xml data generated and outputs the terminal T symbol on the marker
 
-            downloadUrl('../PHP/sql_to_xml.php', function(xml_data) {   
+            downloadUrl('../soa_2/sql_to_xml.php', function(xml_data) {   
                 var xml = xml_data.responseXML;
                 var markers = xml.documentElement.getElementsByTagName('marker');
                 Array.prototype.forEach.call(markers, function(markerElem) {
